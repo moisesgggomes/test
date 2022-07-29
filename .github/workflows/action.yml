@@ -7,4 +7,6 @@ jobs:
     container: node:16.15.1
     steps:
       - run: node --version
+      - run: npm --version
+      - run: npm install
       - run: node index.js
