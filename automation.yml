@@ -1,0 +1,10 @@
+name: Test Node with workflow
+on: push
+jobs:
+  first-job:
+    name: Build with Node
+    runs-on: ubuntu-latest
+    container: node:16.15.1
+    steps:
+      - run: node --version
+      - run: node index.js
